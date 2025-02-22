@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // Parse incoming requests with urlencoded payloads
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://rajmishra3:X90jYWUvxLOos8d5@cluster0.9ha67.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
+mongoose.connect("mongodb://localhost:27017/onetomany2pm").then(()=>{
     console.log("DB connected!!!");
 })
 
